@@ -1,0 +1,53 @@
+/* Estilo para el navbar */
+.navbar {
+    background-color: black;
+}
+
+.navbar-brand {
+    width: 90px; /* Establece el ancho del contenedor en 90px */
+    height: 90px; /* Establece la altura del contenedor en 90px */
+    padding-left: 10px; /* Añade padding izquierdo de 10px */
+    padding-right: 10px; /* Añade padding derecho de 10px */
+    margin-right: 70px;
+}
+
+.navbar-brand img {
+    width: 80px; /* Establece el ancho de la imagen en 80px */
+    height: 80px; /* Establece la altura de la imagen en 80px */
+}
+
+/* Estilo para los enlaces del navbar */
+.navbar-nav .nav-link {
+    color: white !important;
+    font-size: 25px;
+    text-align: center;text-align: center;
+}
+
+.navbar-nav .nav-item {
+    width: 175px; /* Establece el ancho de todos los elementos li en 200px */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+/* Estilo para el enlace activo del navbar */
+.navbar-nav .nav-item.active .nav-link {
+    border-bottom: 2px solid rgb(0, 145, 248);
+}
+
+/* Estilo para el enlace del navbar cuando se pasa el mouse sobre él */
+.navbar-nav .nav-link:hover {
+    border-bottom: 2px solid rgb(155, 0, 0);
+}
+
+.navbar-custom {
+    background-color: black !important;
+    height: 90px !important;
+}
+.navbar-custom .navbar-brand {
+    color: white !important;
+}
+
+/* Estilo para expandir los elementos del menú a lo ancho */
+.navbar-nav {
+    width: 90%;
+    justify-content: space-between;
+}

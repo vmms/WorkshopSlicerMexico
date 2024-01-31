@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 3D Slicer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            background-color: white;
+        }
+        #seccionTitulo {
+            font-size: 40px; /* Cambia el tamaño de la fuente a 18 píxeles */
+            font-weight: bold; /* Hace que el texto sea negrita */
+            font-family: "Poiret one cursive";            
+            text-align: center;
+        }
+
+        #seccionTexto {
+            font-size: 22px; /* Cambia el tamaño de la fuente a 18 píxeles */
+            font-family: "Poiret one";
+            font-weight: bold;
+            text-align: justify;
+        }
+        .listaPrincipal {
+            list-style-type: square; /* Cambia el tipo de viñeta (por ejemplo, a cuadrados) */
+            padding-left: 22px; /* Agrega un espacio a la izquierda para la viñeta */
+            font-family: "Poiret one";
+            color:black;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .listaSecundaria {
+            list-style-type: circle; /* Cambia el tipo de viñeta (por ejemplo, a cuadrados) */
+            padding-left: 20px; /* Agrega un espacio a la izquierda para la viñeta */
+            font-family: "Poiret one";
+            color:black;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+
+       
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom">
+        <div class="container-fluid"> 
+
+            <a class="navbar-brand" href="index.html">
+                <img src="images/slicer.png" alt="Logo" height="30">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="abirPagina()">
+                <span class="navbar-toggler-icon text-white">
+                    <i class="fas fa-bars"></i>
+                </span>
+            </button>
+         
+
+            <div class="collapse navbar-collapse dropdown-menu-right" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Presentación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Organizadores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="programa.html">Programa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="logistica.html">Logística</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="descargas.html">Descargas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <img src="images/download.png" alt="Imagen central" style="margin-top: 100px;">
+                <p id="seccionTitulo">DESCARGAS</p>  
+    
+            </div>
+           
+            <!-- Columna derecha (tamaño 9) -->
+            <div class="col-md-7" style="margin-top: 20px;">
+                <p id = "seccionTexto">Para seguir correctamente los talleres previstos, se pide a los participantes:</p>
+                <div class="container mt-5 ">
+                    <ul class="listaPrincipal">
+                        <li>Instalar y lanzar el software 3D Slicer: Una guía del usuario está disponible en formato PDF o en forma de
+                            video tutorial:
+                            <div class="container mt-5">
+                                <ul class="listaSecundaria">
+                                    <li><a href="https://download.slicer.org/bitstream/65783bef83a3201b44d52468">3D Slicer para Windows</a></li>
+                                    <li><a href="https://download.slicer.org/">3D Slicer para Mac OS</a></li>
+                                    <li><a href="https://download.slicer.org/bitstream/657813b183a3201b44d4e6f7">3D Slicer para Linux</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container mt-5 ">
+                    <ul class="listaPrincipal">
+                        <li>Descargar los conjuntos de datos necesarios para participar en los talleres:
+                            <div class="container mt-5">
+                                <ul class="listaSecundaria">
+                                    <li><a href="datosTaller">Conjunto de datos del Taller 1</a></li>
+                                    <li><a href="datosTaller">Conjunto de datos del Taller 2</a></li>
+                                    <li><a href="datosTaller">Conjunto de datos del Taller 3</a></li>
+                                   
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+      
+   
+    
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <script>
+    // Función para abrir una página cuando se hace clic en el botón
+    function abrirPagina() {
+        // Cambia 'tu-pagina.html' por la ruta de la página que deseas abrir
+        window.location.href = 'index.html';
+    }
+</script>
+
+</html>
