@@ -1,0 +1,65 @@
+/* Estilo para el fondo negro en la página principal */
+body {
+    background-color: black;
+    background-image: url('images/portada.png');
+    background-size: contain; 
+    background-position: left 150px top 0px;
+    background-repeat: no-repeat;
+    font-family: 'Poiret One', sans-serif;
+}
+
+.titulo {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    color: #ffffff;
+    padding-right: 100px;
+    margin: 0 50px 0 50px ;
+}
+
+.titulo p {
+    margin-bottom: 1px; /* Ajusta el espacio entre párrafos según lo necesites */
+}
+
+
+.titulo p:nth-child(1) {
+    font-size: 75px; /* Tamaño para el primer párrafo */
+}
+
+.titulo p:nth-child(2) {
+    font-size: 50px; /* Tamaño para el segundo párrafo */
+}
+
+.titulo p:nth-child(3) {
+    font-size: 40px; /* Tamaño para el tercer párrafo */
+}
+
+.imagen-flotante {
+    position: absolute; 
+    top: 70vh; 
+    left: 65vw;
+    width: 200px; 
+    height: 200px; 
+    opacity: 0.15;
+}
+
+.boton-flotante {
+    position: absolute; 
+    bottom: 100px; 
+    right: 45%;
+    background-color: rgba(255, 0, 0, .2);
+    color: rgba(0, 0, 0, 0.6);
+    padding: 10px 50px; 
+    border-radius: 20px;
+    border: none; 
+    cursor: pointer; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    font-size: 40px;
+}
+
+.boton-flotante:hover {
+    background-color: rgb(200, 0, 0); /* Cambia la opacidad al pasar el mouse */
+    color: rgba(255, 255, 255, 1);
+}
