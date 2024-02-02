@@ -51,3 +51,41 @@
     width: 90%;
     justify-content: space-between;
 }
+
+@media (max-width: 767px) {
+    .navbar {
+        background-color: black; /* Cambia el color de fondo de la barra de navegación */
+        z-index: 1000;
+    }
+
+    .navbar-collapse {
+        background-color: black;
+    }
+
+    .navbar-nav {
+        /* Establecer los elementos del menú a la derecha */
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    .navbar-brand {
+        /* Estilos para el logotipo en dispositivos móviles */
+        width: 60px; /* Reducir el ancho del contenedor del logotipo */
+        height: 60px; /* Reducir la altura del contenedor del logotipo */
+        padding-left: 0; /* Eliminar el padding izquierdo */
+        padding-right: 0; /* Eliminar el padding derecho */
+        margin-right: 0; /* Eliminar el margen derecho */
+    }
+
+    .navbar-brand img {
+        /* Estilos para la imagen del logotipo en dispositivos móviles */
+        width: 50px; /* Reducir el tamaño de la imagen del logotipo */
+        height: 50px; /* Reducir el tamaño de la imagen del logotipo */
+    }
+
+    .navbar-nav .nav-item {
+        /* Estilos para los elementos del menú en dispositivos móviles */
+        width: auto; /* Ancho automático para adaptarse al contenido */
+        text-align: center; /* Centrar el texto horizontalmente */
+    }
+}

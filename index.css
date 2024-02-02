@@ -63,3 +63,133 @@ body {
     background-color: rgb(200, 0, 0); /* Cambia la opacidad al pasar el mouse */
     color: rgba(255, 255, 255, 1);
 }
+
+@media (max-width: 767px) and (orientation: portrait) {
+    body {
+        background-color: black;
+        background-image: url('images/portada.png');
+        background-size: contain; 
+        background-position: center ;
+        background-repeat: no-repeat;
+        font-family: 'Poiret One', sans-serif;
+    }
+
+    .imagen-flotante {
+        display: none;
+        position: absolute; 
+        top: 70vh; 
+        left: 65vw;
+        width: 200px; 
+        height: 200px; 
+        opacity: 0.15;
+    }
+
+    .titulo {
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        color: #ffffff;
+        padding-right: 10px;
+        margin: 0 10px 0 10px ;
+    }
+    
+    .titulo p {
+        margin-bottom: 1px; /* Ajusta el espacio entre párrafos según lo necesites */
+    }
+    
+    
+    .titulo p:nth-child(1) {
+        font-size: 50px; /* Tamaño para el primer párrafo */
+        text-align: right;
+    }
+    
+    .titulo p:nth-child(2) {
+        font-size: 30px; /* Tamaño para el segundo párrafo */
+    }
+    
+    .titulo p:nth-child(3) {
+        font-size: 25px; /* Tamaño para el tercer párrafo */
+    }
+
+    .boton-flotante {
+        position: relative; 
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(255, 0, 0, 1);
+        color: rgba(0, 0, 0, 1);
+        padding: 10px 50px; 
+        border-radius: 20px;
+        border: none; 
+        cursor: pointer; 
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+    body {
+        background-color: black;
+        background-image: url('images/portada.png');
+        background-size: contain; 
+        background-position: center ;
+        background-repeat: no-repeat;
+        font-family: 'Poiret One', sans-serif;
+    }
+
+    .imagen-flotante {
+        display: none;
+        position: absolute; 
+        top: 70vh; 
+        left: 65vw;
+        width: 200px; 
+        height: 200px; 
+        opacity: 0.15;
+    }
+
+    .titulo {
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        color: #ffffff;
+        padding-right: 10px;
+        margin: 0 10px 0 10px ;
+    }
+    
+    .titulo p {
+        margin-bottom: 1px; /* Ajusta el espacio entre párrafos según lo necesites */
+    }
+    
+    
+    .titulo p:nth-child(1) {
+        font-size: 50px; /* Tamaño para el primer párrafo */
+        text-align: right;
+    }
+    
+    .titulo p:nth-child(2) {
+        font-size: 30px; /* Tamaño para el segundo párrafo */
+    }
+    
+    .titulo p:nth-child(3) {
+        font-size: 25px; /* Tamaño para el tercer párrafo */
+    }
+
+    .boton-flotante {
+        position: relative; 
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(255, 0, 0, 1);
+        color: rgba(0, 0, 0, 1);
+        padding: 10px 50px; 
+        border-radius: 20px;
+        border: none; 
+        cursor: pointer; 
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+        font-size: 25px;
+    }
+
+}
