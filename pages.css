@@ -27,10 +27,38 @@ body {
     padding: 50px 50px; 
 }
 
+.imagen-principal {
+    width: 250px; 
+    height: 250px; 
+    border-radius: 50%; 
+    object-fit: cover;
+    object-position: center -25px;
+    border: 2px solid #fff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+}
+
 .imagen-grande {
     width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    object-fit: cover;
+    object-position: center 0px;
+    border: 2px solid #fff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
 }
 
 .imagen-pequena {
-    width: 100px; 
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    object-fit: cover;
+    object-position: center 0px;
+    border: 2px solid #fff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
 }
+
+.img-vic{
+    object-position: center -40px; 
+    font-size: 2rem; 
+}
+

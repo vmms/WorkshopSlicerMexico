@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller 3D Slicer</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -12,6 +13,7 @@
         body {
             margin: 0;
             background-color: white;
+            font-family: 'Poiret One';
         }
         #seccionTitulo {
             font-size: 40px; /* Cambia el tamaño de la fuente a 18 píxeles */
@@ -23,7 +25,6 @@
         #seccionTexto {
             font-size: 22px; /* Cambia el tamaño de la fuente a 18 píxeles */
             font-family: "Poiret one";
-            font-weight: bold;
             text-align: justify;
         }
         .listaPrincipal {
@@ -31,7 +32,6 @@
             padding-left: 22px; /* Agrega un espacio a la izquierda para la viñeta */
             font-family: "Poiret one";
             color:black;
-            font-weight: bold;
             font-size: 20px;
         }
         .listaSecundaria {
@@ -39,12 +39,68 @@
             padding-left: 20px; /* Agrega un espacio a la izquierda para la viñeta */
             font-family: "Poiret one";
             color:black;
-            font-weight: bold;
             font-size: 18px;
         }
+        .custom-list {
+            list-style-type: none; /* Elimina las viñetas por defecto */
+            padding: 0;
+        }
 
+        .custom-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px; /* Espacio entre los elementos de la lista */
+        }
 
-       
+        .custom-list li::before {
+            content: '';
+            display: inline-block;
+            width: 24px; /* Ancho de la imagen */
+            height: 24px; /* Alto de la imagen */
+            margin-right: 10px; /* Espacio entre la imagen y el texto */
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .custom-list li.item-1::before {
+            background-image: url('images/windows-logo.svg');
+        }
+
+        .custom-list li.item-2::before {
+            background-image: url('images/apple-logo.svg'); 
+        }
+
+        .custom-list li.item-3::before {
+            background-image: url('images/linux-logo.svg'); 
+        }
+        .custom-list a {
+            text-decoration: none; 
+            color: inherit; 
+            display: inline-block; 
+            padding: 0; 
+        }
+        .custom-list a:hover {
+            color: #007BFF; 
+            background-color: #f0f0f0; 
+            border-radius: 5px; 
+            padding: 0px 0px 0px 15px; 
+        }
+        .centered-content {
+            text-align: center; 
+            margin: 25px;
+            font-size: 20px; 
+        }
+
+        .centered-content a {
+            color: #007BFF; 
+            text-decoration: none; 
+            transition: color 0.3s ease; 
+        }
+
+        .centered-content a:hover {
+            color: #0056b3; 
+        }
+
     </style>
 </head>
 <body>
@@ -65,10 +121,10 @@
             <div class="collapse navbar-collapse dropdown-menu-right" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Presentación</a>
+                        <a class="nav-link" href="presentacion.html">Presentación</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Organizadores</a>
+                        <a class="nav-link" href="organizadores.html">Organizadores</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="programa.html">Programa</a>
@@ -90,9 +146,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-5">
-                <img src="images/download.png" alt="Imagen central" style="margin-top: 100px;">
-                <p id="seccionTitulo">DESCARGAS</p>  
-    
+                <p id="seccionTitulo">DESCARGAS</p> 
+                <img src="images/descargas.png" alt="Imagen central" style="margin-top: 0px;">
             </div>
            
             <!-- Columna derecha (tamaño 9) -->
@@ -103,10 +158,16 @@
                         <li>Instalar y lanzar el software 3D Slicer: Una guía del usuario está disponible en formato PDF o en forma de
                             video tutorial:
                             <div class="container mt-5">
-                                <ul class="listaSecundaria">
-                                    <li><a href="https://download.slicer.org/bitstream/65783bef83a3201b44d52468">3D Slicer para Windows</a></li>
-                                    <li><a href="https://download.slicer.org/">3D Slicer para Mac OS</a></li>
-                                    <li><a href="https://download.slicer.org/bitstream/657813b183a3201b44d4e6f7">3D Slicer para Linux</a></li>
+                                <ul class="custom-list">
+                                    <li class="item-1">
+                                        <a href="https://download.slicer.org/bitstream/660fb6c930e435b0e3560453" target="_blank">3D Slicer para Windows</a>
+                                    </li>
+                                    <li class="item-2">
+                                        <a href="https://download.slicer.org/bitstream/660fa2e930e435b0e355f67c" target="_blank">3D Slicer para Mac OS</a>
+                                    </li>
+                                    <li class="item-3">
+                                        <a href="https://download.slicer.org/bitstream/660f92ed30e435b0e355f1a4" target="_blank">3D Slicer para Linux</a>
+                                    </li>                            
                                 </ul>
                             </div>
                         </li>
@@ -130,7 +191,13 @@
             </div>
         </div>
       
-   
+    </div>
+    <div class="centered-content">
+        Puedes obtener otras versiones de 3D Slicer si consultas la 
+        <a href="https://www.slicer.org" target="_blank">página oficial</a> 
+        o haciendo click 
+        <a href="https://download.slicer.org" target="_blank">aquí</a>.
+    </div>
     
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
