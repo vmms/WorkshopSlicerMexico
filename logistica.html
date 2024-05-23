@@ -12,7 +12,8 @@
     <style>
         body {
             margin: 0;
-            background-color: white;
+            background-image: url('images/logic.png');
+            background-repeat: repeat; 
             font-family: 'Poiret One';
         }
         #seccionTitulo {
@@ -27,6 +28,16 @@
             font-family: "Poiret one";
             text-align: justify;
         }
+        .loggic{
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.5); 
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            margin-top: 30px; 
+            position: relative; 
+            z-index: 1;
+        }
+
         .imagen-circular {
             width: 300px; /* Ajusta el tamaño de la imagen según tus necesidades */
             height: 300px;
@@ -34,7 +45,58 @@
             margin: 0 auto; /* Centra la imagen horizontalmente */
             display: block; /* Elimina espacios debajo de la imagen */
         }
-       
+        .row {
+            height: 120px;
+            display: flex;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        .arrow-left {
+            width: 0; 
+            height: 0; 
+            border-top: 30px solid transparent;
+            border-bottom: 30px solid transparent;
+            border-left: 60px solid black;
+            margin: 10px auto;
+        }
+        .arrow-right {
+            width: 0; 
+            height: 0; 
+            border-top: 30px solid transparent;
+            border-bottom: 30px solid transparent;
+            border-right: 60px solid black;
+            margin: 10px auto;
+        }
+        .color-yellow{
+            border-left: 60px solid rgb(238, 191, 76);
+        }
+        .color-blue{
+            border-left: 60px solid rgb(68, 142,142);
+        }
+        .color-green{
+            border-left: 60px solid rgb(61, 137, 65);
+        }
+        .color-bluey{
+            border-left: 60px solid rgb(52, 128, 222);
+        }
+        .color-red{
+            border-left: 60px solid rgb(193, 64, 79);
+        }
+        .color-yellow-r{
+            border-right: 60px solid rgb(238, 191, 76);
+        }
+        .color-blue-r{
+            border-right: 60px solid rgb(68, 142,142);
+        }
+        .color-green-r{
+            border-right: 60px solid rgb(61, 137, 65);
+        }
+        .color-bluey-r{
+            border-right: 60px solid rgb(52, 128, 222);
+        }
+        .color-red-r{
+            border-right: 60px solid rgb(193, 64, 79);
+        }
     </style>
 </head>
 <body>
@@ -75,50 +137,73 @@
                 </ul>
             </div>
         </div>
-    </nav>
-   <p id="seccionTitulo">LOGÍSTICA</p>   
+    </nav>   
 
-   <div class="container mt-10">
+    <div class="container loggic">
+        <p id="seccionTitulo">LOGÍSTICA</p>
         <p id="seccionTexto"> El taller se llevará a cabo en su totalidad de manera presencial dentro de la Facultad de Ingeniería de la UAEMX. Para los participantes que deseen reproducir los talleres en sus propios ordenadores, necesitarán una máquina con un mínimo de 4GB de RAM y un sistema operativo reciente (Windows 10 o 11, MacOS High Sierra o superior, Ubuntu 18.04, CentOS 7 o superior). Puede encontrar más información en la documentación oficial de 3D Slicer.
         </p>
-   </div>
-    <div class="container mt-3">
         <div class="row">
-            <!-- Columna izquierda -->
-            <div class="col">
-                <div class="row mb-5" style="margin-top: 5%;">
-                    <p id="seccionTexto">Fecha: 10 de Junio de 2024 a las 10:00 GMT</p>
-                </div>
-                <div class="row mb-5" style="margin-top:20% ;">
-                    <p id="seccionTexto">Lugar: El taller se llevará a cabo en...</p>
-                </div>
-                
+            <div class = "col-md-1">
+                <div class="arrow-right color-yellow-r"></div>
             </div>
-            
-            <!-- Columna central con la imagen circular -->
-            <div class="col text-center">
-                <img src="images/circulo.png" alt="Imagen Circular" class="img-fluid imagen-circular">
+            <div class = "col-md-10">
+                <p id="seccionTexto">Fecha: 10 de Junio de 2024 a las 10:00 GMT</p>
             </div>
-            
-            <!-- Columna derecha -->
-            <div class="col">
-                <div class="row " style="margin-top: 0%;">
-                    <p id="seccionTexto">Inscripción: Para participar en el evento, rellene el formulario de
-                        inscripción haciendo clic aquí. El número de participantes es limitado</p>
-                </div>
-                <div class="row mb-5" style="margin-top:5% ;">
-                    <p id="seccionTexto">Recursos: Para seguir correctamente los talleres previstos, se pide a los
-                        participantes que obtengan los recursos especificados en el apartado <a href="descargas.html">Descargas</a>
-                    </p>
-                </div>
-                
+            <div class = "col-md-1">
+                <div class="arrow-left color-yellow"></div>
             </div>
         </div>
-    </div>
-    <div class="container mt-10" style="margin-top: 0%;">
-        <p id="seccionTexto"> Preparación: Se celebrará una reunión de preparación en línea el sábado 08 de julio de 15:00 a 17:00 GMT. El objetivo será ayudar a los participantes que tienen dificultades para instalar o
-            obtener los recursos necesarios para el buen desarrollo de los talleres. El enlace de acceso a la sesión de preparación también se le comunicará por correo electrónico después de la inscripción.
-        </p>
+        <div class="row">
+            <div class = "col-md-1">
+                <div class="arrow-right color-blue-r"></div>
+            </div>
+            <div class = "col-md-10">
+                <p id="seccionTexto">Lugar: El taller se llevará a cabo en...</p>
+            </div>
+            <div class = "col-md-1">
+                <div class="arrow-left color-blue"></div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class = "col-md-1">
+                <div class="arrow-right color-green-r"></div>
+            </div>
+            <div class = "col-md-10">
+                <p id="seccionTexto">Inscripción: Para participar en el evento, rellene el formulario de
+                    inscripción haciendo clic aquí. El número de participantes es limitado</p>
+            </div>
+            <div class = "col-md-1">
+                <div class="arrow-left color-green"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class = "col-md-1">
+                <div class="arrow-right color-bluey-r"></div>
+            </div>
+            <div class = "col-md-10">
+                <p id="seccionTexto">Recursos: Para seguir correctamente los talleres previstos, se pide a los
+                    participantes que obtengan los recursos especificados en el apartado <a href="descargas.html">Descargas</a></p>
+            </div>
+            <div class = "col-md-1">
+                <div class="arrow-left color-bluey"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class = "col-md-1">
+                <div class="arrow-right color-red-r"></div>
+            </div>
+            <div class = "col-md-10">
+                <p id="seccionTexto">Preparación: Se celebrará una reunión de preparación en línea el sábado 08 de julio de 15:00 a 17:00 GMT. El objetivo será ayudar a los participantes que tienen dificultades para instalar o
+                    obtener los recursos necesarios para el buen desarrollo de los talleres. El enlace de acceso a la sesión de preparación también se le comunicará por correo electrónico después de la inscripción.</p>
+            </div>
+            <div class = "col-md-1">
+                <div class="arrow-left color-red"></div>
+            </div>
+        </div>
    </div>
 
     <!-- Scripts de Bootstrap desde CDN (opcional, pero recomendado) -->

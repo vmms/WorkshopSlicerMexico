@@ -23,11 +23,32 @@
         }
 
         #seccionTexto {
-            font-size: 20px; /* Cambia el tamaño de la fuente a 18 píxeles */
+            font-size: 1.1vw;; /* Cambia el tamaño de la fuente a 18 píxeles */
             font-family: "Poiret one";
             text-align: center;
+            line-height: 1.5;
+            height: 70px;
+            display: flex; 
+            align-items: center;
+            justify-content: center;
         }
 
+        .container {
+            width: 100%;
+            height: auto; /* Ajusta la altura según necesites */
+            background-image: url('images/notes.png');
+            background-repeat: repeat-y; /* Repite la imagen verticalmente */
+            background-size: auto; /* Ajusta el tamaño de la imagen según necesites */
+            background-position: center; /* Centra la imagen horizontalmente */
+            position: relative;
+            z-index: 1; 
+        }
+
+        .row {
+            display: flex;
+            margin-left: 215px;
+            margin-right: 180px;
+        }
        
     </style>
 </head>
@@ -70,96 +91,95 @@
             </div>
         </div>
     </nav>
-   <p id="seccionTitulo">PROGRAMA</p>   
-   <div class="container">
-    <div class="row">
-        <div class="col-md-2">
-            <p id = "seccionTitulo">Horario</p>
-        </div>
+    <p id="seccionTitulo">PROGRAMA</p>   
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <p id = "seccionTitulo">Horario</p>
+            </div>
 
-        <!-- Columna derecha (tamaño 9) -->
-        <div class="col-md-9">
-            <p id = "seccionTitulo">Actividades</p>
-        </div>
-    </div>
-
-   <div class = "row mb-3">
-        <div class = "col-md-2">
-            <div class="bg-dark text-white p-3 rounded-start">
-                <p id="seccionTexto"> 11:00 AM</p>
+            <!-- Columna derecha (tamaño 9) -->
+            <div class="col-md-10">
+                <p id = "seccionTitulo">Actividades</p>
             </div>
         </div>
-        <div class="col-md-9">
-            <div class ="bg-dark text-white p-3 rounded-end">
-                <p id = "seccionTexto">Pre-Workshop: Verificación de la instalación de la versión francesa de 3D Slicer y los conjuntos de datos</p>
+
+        <div class = "row mb-2">
+            <div class = "col-md-2">
+                <div class="bg-dark text-white">
+                    <p id="seccionTexto"> 11:00 AM</p>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class ="bg-dark text-white">
+                    <p id = "seccionTexto">Pre-Workshop: Verificación de la instalación de la versión francesa de 3D Slicer y los conjuntos de datos</p>
+                </div>
             </div>
         </div>
-        
-   </div>
   
         
-    <div class = "row mb-3">
+        <div class = "row mb-2">
             <div class = "col-md-2">
-                <div class="bg-dark text-white p-3 rounded-start">
+                <div class="bg-dark text-white">
                     <p id="seccionTexto"> 11:30 AM</p>
                 </div>
             </div>
-            <div class="col-md-9">
-                <div class ="bg-dark text-white p-3 rounded-end">
+            <div class="col-md-10">
+                <div class ="bg-dark text-white rounded-end">
                     <p id = "seccionTexto">Objetivos y presentación</p>
                 </div>
             </div>
-            
-    </div>  
+        </div>  
     
-    <div class = "row mb-3">
-        <div class = "col-md-2">
-            <div class="bg-dark text-white p-3 rounded-start">
-                <p id="seccionTexto"> 12:30 AM</p>
+        <div class = "row mb-2">
+            <div class = "col-md-2">
+                <div class="bg-dark text-white">
+                    <p id="seccionTexto"> 12:30 AM</p>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class ="bg-dark text-white">
+                    <p id = "seccionTexto">Introducción a 3D Slicer</p>
+                </div>
             </div>
         </div>
-        <div class="col-md-9">
-            <div class ="bg-dark text-white p-3 rounded-end">
-                <p id = "seccionTexto">Introducción a 3D Slicer</p>
-            </div>
-        </div>
-    </div>
         
-    <div class = "row mb-3">
-        <div class = "col-md-2">
-            <div class="bg-dark text-white p-3 rounded-start">
-                <p id="seccionTexto"> 12:00 AM</p>
+        <div class = "row mb-2">
+            <div class = "col-md-2">
+                <div class="bg-dark text-white">
+                    <p id="seccionTexto"> 12:00 AM</p>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class ="bg-dark text-white">
+                    <p id = "seccionTexto">Taller 1: </p>
+                </div>
             </div>
         </div>
-        <div class="col-md-9">
-            <div class ="bg-dark text-white p-3 rounded-end">
-                <p id = "seccionTexto">Taller 1: </p>
-            </div>
-        </div>
-    </div>
 
-    <div class = "row mb-3">
-        <div class = "col-md-2">
-            <div class="bg-dark text-white p-3 rounded-start">
-                <p id="seccionTexto"> 12:30 AM</p>
+        <div class = "row mb-2">
+            <div class = "col-md-2">
+                <div class="bg-dark text-white">
+                    <p id="seccionTexto"> 12:30 AM</p>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class ="bg-dark text-white">
+                    <p id = "seccionTexto">Lunch </p>
+                </div>
             </div>
         </div>
-        <div class="col-md-9">
-            <div class ="bg-dark text-white p-3 rounded-end">
-                <p id = "seccionTexto">Lunch </p>
-            </div>
-        </div>
-    </div>
 
-    <div class = "row mb-3">
-        <div class = "col-md-2">
-            <div class="bg-dark text-white p-3 rounded-start">
-                <p id="seccionTexto"> 13:30 AM</p>
+        <div class = "row mb-2">
+            <div class = "col-md-2">
+                <div class="bg-dark text-white">
+                    <p id="seccionTexto"> 13:30 AM</p>
+                </div>
             </div>
-        </div>
-        <div class="col-md-9">
-            <div class ="bg-dark text-white p-3 rounded-end">
-                <p id = "seccionTexto">Taller 2 </p>
+            <div class="col-md-10">
+                <div class ="bg-dark text-white">
+                    <p id = "seccionTexto">Taller 2 </p>
+                </div>
             </div>
         </div>
     </div>
